@@ -1,0 +1,16 @@
+C:\Users\xh.li\Desktop\CS-VS\SSO.LibTests\bin\Debug\SSO.LibTests.dll
+C:\Users\xh.li\Desktop\CS-VS\SSO.LibTests\bin\Debug\SSO.LibTests.pdb
+C:\Users\xh.li\Desktop\CS-VS\SSO.LibTests\bin\Debug\SSO.Lib.dll
+C:\Users\xh.li\Desktop\CS-VS\SSO.LibTests\bin\Debug\SSO.Lib.pdb
+C:\Users\xh.li\Desktop\CS-VS\SSO.LibTests\obj\Debug\SSO.LibTests.csprojResolveAssemblyReference.cache
+C:\Users\xh.li\Desktop\CS-VS\SSO.LibTests\obj\Debug\SSO.LibTests.dll
+C:\Users\xh.li\Desktop\CS-VS\SSO.LibTests\obj\Debug\SSO.LibTests.pdb
+D:\VS.Own.Archer\CS-VS\SSO.LibTests\bin\Debug\SSO.LibTests.dll
+D:\VS.Own.Archer\CS-VS\SSO.LibTests\bin\Debug\SSO.LibTests.pdb
+D:\VS.Own.Archer\CS-VS\SSO.LibTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\VS.Own.Archer\CS-VS\SSO.LibTests\bin\Debug\SSO.Lib.dll
+D:\VS.Own.Archer\CS-VS\SSO.LibTests\bin\Debug\SSO.Lib.pdb
+D:\VS.Own.Archer\CS-VS\SSO.LibTests\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\VS.Own.Archer\CS-VS\SSO.LibTests\obj\Debug\SSO.LibTests.csprojResolveAssemblyReference.cache
+D:\VS.Own.Archer\CS-VS\SSO.LibTests\obj\Debug\SSO.LibTests.dll
+D:\VS.Own.Archer\CS-VS\SSO.LibTests\obj\Debug\SSO.LibTests.pdb

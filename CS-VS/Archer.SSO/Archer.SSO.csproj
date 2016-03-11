@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BB0E625-B22A-4A5C-858B-70037E1E640C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Archer.SSO</RootNamespace>
+    <AssemblyName>Archer.SSO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Account.Designer.cs">
+      <DependentUpon>Frm_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ChangePwd.Designer.cs">
+      <DependentUpon>Frm_ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Customer.Designer.cs">
+      <DependentUpon>Frm_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Department.Designer.cs">
+      <DependentUpon>Frm_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Factory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Factory.Designer.cs">
+      <DependentUpon>Frm_Factory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Menu.Designer.cs">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Role.Designer.cs">
+      <DependentUpon>Frm_Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SwitchRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SwitchRole.Designer.cs">
+      <DependentUpon>Frm_SwitchRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Udc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Udc.Designer.cs">
+      <DependentUpon>Frm_Udc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helpclass\ListItem.cs" />
+    <Compile Include="helpclass\PublicInfo.cs" />
+    <Compile Include="helpclass\PublicMethods.cs" />
+    <Compile Include="helpclass\ReadSystemSet.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Account.resx">
+      <DependentUpon>Frm_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ChangePwd.resx">
+      <DependentUpon>Frm_ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Customer.resx">
+      <DependentUpon>Frm_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Department.resx">
+      <DependentUpon>Frm_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Factory.resx">
+      <DependentUpon>Frm_Factory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Menu.resx">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Role.resx">
+      <DependentUpon>Frm_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SwitchRole.resx">
+      <DependentUpon>Frm_SwitchRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Udc.resx">
+      <DependentUpon>Frm_Udc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Archer.ExtendControlLib\Archer.ExtendControlLib.csproj">
+      <Project>{8626a907-12d6-448b-9611-92eebee36cc2}</Project>
+      <Name>Archer.ExtendControlLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SSO.Lib\SSO.Lib.csproj">
+      <Project>{ee0a2ffd-1991-4611-8ea2-250f1ea94bc3}</Project>
+      <Name>SSO.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\SystemSet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\busy.png" />
+    <Content Include="icon\edit.png" />
+    <Content Include="icon\flag.png" />
+    <Content Include="icon\lock.png" />
+    <Content Include="icon\logout.png" />
+    <Content Include="icon\my_account.png" />
+    <Content Include="icon\p001.png" />
+    <Content Include="icon\plus.png" />
+    <Content Include="icon\refresh.png" />
+    <Content Include="icon\search.png" />
+    <Content Include="icon\user.png" />
+    <Content Include="image\001.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Archer.CS.System" Class="CS_SystemDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.8.53;Initial Catalog=Archer.CS.System;Persist Security Info=True;User ID=sa" SettingsObjectName="SSO.Lib.Properties.Settings" SettingsPropertyName="Archer_CS_SystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TB_Account" Member="TB_Account">
+    <Type Name="TB_Account">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EngName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DeptID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DeptCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Segment1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment7" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_Department" Member="TB_Department">
+    <Type Name="TB_Department">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Segment1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment7" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_Factory" Member="TB_Factory">
+    <Type Name="TB_Factory">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Segment1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment7" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_Menu" Member="TB_Menu">
+    <Type Name="TB_Menu">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CmdForm" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CmdExe" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Segment1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment7" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_Role" Member="TB_Role">
+    <Type Name="TB_Role">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Segment1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment7" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_Role_R" Member="TB_Role_R">
+    <Type Name="TB_Role_R">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="RName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Segment1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment7" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TB_Udc" Member="TB_Udc">
+    <Type Name="TB_Udc">
+      <Column Name="ID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SysCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdateOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Segment1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Segment7" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

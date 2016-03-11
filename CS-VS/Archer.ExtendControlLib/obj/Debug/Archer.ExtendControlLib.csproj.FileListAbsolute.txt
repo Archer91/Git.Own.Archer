@@ -1,0 +1,10 @@
+C:\Users\xh.li\Desktop\CS-VS\Archer.ExtendControlLib\bin\Debug\Archer.ExtendControlLib.dll
+C:\Users\xh.li\Desktop\CS-VS\Archer.ExtendControlLib\bin\Debug\Archer.ExtendControlLib.pdb
+C:\Users\xh.li\Desktop\CS-VS\Archer.ExtendControlLib\obj\Debug\Archer.ExtendControlLib.dll
+C:\Users\xh.li\Desktop\CS-VS\Archer.ExtendControlLib\obj\Debug\Archer.ExtendControlLib.pdb
+C:\Users\xh.li\Desktop\CS-VS\Archer.ExtendControlLib\obj\Debug\Archer.ExtendControlLib.csprojResolveAssemblyReference.cache
+D:\VS.Own.Archer\CS-VS\Archer.ExtendControlLib\bin\Debug\Archer.ExtendControlLib.dll
+D:\VS.Own.Archer\CS-VS\Archer.ExtendControlLib\bin\Debug\Archer.ExtendControlLib.pdb
+D:\VS.Own.Archer\CS-VS\Archer.ExtendControlLib\obj\Debug\Archer.ExtendControlLib.csprojResolveAssemblyReference.cache
+D:\VS.Own.Archer\CS-VS\Archer.ExtendControlLib\obj\Debug\Archer.ExtendControlLib.dll
+D:\VS.Own.Archer\CS-VS\Archer.ExtendControlLib\obj\Debug\Archer.ExtendControlLib.pdb

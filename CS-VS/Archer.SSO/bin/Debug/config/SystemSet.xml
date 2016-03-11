@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SysSet>
+  <SysTitle> XXX 信息系统平台</SysTitle>
+  
+  <Factories>
+    <Factory>
+      <Code>SZ</Code>
+      <Name>深圳公司</Name>
+    </Factory>
+    <Factory>
+      <Code>BJ</Code>
+      <Name>北京公司</Name>
+    </Factory>
+  </Factories>
+  
+  <WebServices>
+    <WebService>
+      <HostIP>192.168.8.53</HostIP>
+      <HostPort>8080</HostPort>
+    </WebService>
+  </WebServices>
+  
+  <Upgrade AutoCheckVer="False">
+    <HostIP>192.168.8.53</HostIP>
+    <HostPort>8989</HostPort>
+  </Upgrade>
+  
+  <Mail>
+    <HostIP>192.168.8.53</HostIP>
+    <HostPort>9090</HostPort>
+  </Mail>
+  
+  <AttachBasePath>\\192.168.1.23\it\IT\xh.li\</AttachBasePath>
+
+  <Login>
+    <User>test</User>
+    <Pwd>123</Pwd>
+  </Login>
+
+  <SQLConfig>
+    <SqlServer>192.168.8.53</SqlServer>
+    <SqlUser>sa</SqlUser>
+    <SqlPwd>mysql</SqlPwd>
+    <Database>Test</Database>
+  </SQLConfig>
+</SysSet>

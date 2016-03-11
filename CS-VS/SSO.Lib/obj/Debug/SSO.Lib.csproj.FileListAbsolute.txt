@@ -1,0 +1,12 @@
+C:\Users\xh.li\Desktop\CS-VS\SSO.Lib\bin\Debug\SSO.Lib.dll.config
+C:\Users\xh.li\Desktop\CS-VS\SSO.Lib\bin\Debug\SSO.Lib.dll
+C:\Users\xh.li\Desktop\CS-VS\SSO.Lib\bin\Debug\SSO.Lib.pdb
+C:\Users\xh.li\Desktop\CS-VS\SSO.Lib\obj\Debug\SSO.Lib.dll
+C:\Users\xh.li\Desktop\CS-VS\SSO.Lib\obj\Debug\SSO.Lib.pdb
+C:\Users\xh.li\Desktop\CS-VS\SSO.Lib\obj\Debug\SSO.Lib.csprojResolveAssemblyReference.cache
+D:\VS.Own.Archer\CS-VS\SSO.Lib\bin\Debug\SSO.Lib.dll.config
+D:\VS.Own.Archer\CS-VS\SSO.Lib\bin\Debug\SSO.Lib.dll
+D:\VS.Own.Archer\CS-VS\SSO.Lib\bin\Debug\SSO.Lib.pdb
+D:\VS.Own.Archer\CS-VS\SSO.Lib\obj\Debug\SSO.Lib.csprojResolveAssemblyReference.cache
+D:\VS.Own.Archer\CS-VS\SSO.Lib\obj\Debug\SSO.Lib.dll
+D:\VS.Own.Archer\CS-VS\SSO.Lib\obj\Debug\SSO.Lib.pdb
