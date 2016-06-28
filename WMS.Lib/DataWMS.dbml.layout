@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataWMS">
+  <DataContextMoniker Name="/DataWMSDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ea165e76-acaa-4087-b067-b16f6e1b4b8c" isExpanded="false" absoluteBounds="2.625, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Basic_Warehouse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82a06525-aee8-4f88-9379-dc84defa3448" absoluteBounds="2.64, 0.96, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e658d40-840c-49eb-ab38-3b1d383d2065" isExpanded="false" absoluteBounds="2.625, 1, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Basic_Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ec35cc70-0843-4aa9-94c8-398d75fc6a8c" absoluteBounds="2.64, 1.46, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68b95e46-c160-4d97-8169-8b3bb197cbd6" isExpanded="false" absoluteBounds="2.625, 1.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Basic_Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7cdffbc8-6005-4524-a9d5-465d5c32f6a5" absoluteBounds="2.64, 1.96, 1.9700000000000002, 3.876841227213542" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="33a0109e-4c33-4102-be8e-24fbad738078" isExpanded="false" absoluteBounds="2.625, 2, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Basic_Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa51aff9-eb7a-47df-b27c-345358109165" absoluteBounds="2.64, 2.46, 1.9700000000000002, 3.876841227213542" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f444d227-b299-48b3-846b-3dfa8159e92c" isExpanded="false" absoluteBounds="2.625, 2.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Basic_ItemCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="652d4ebf-e986-4dcd-9223-fffcde27c370" absoluteBounds="2.64, 2.96, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9bc4fd5f-a8af-4add-8126-fb971f52308d" isExpanded="false" absoluteBounds="0.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Sys_Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ee06d3d-2ed7-41ee-b4e6-fb18d02f9217" absoluteBounds="0.515, 0.96, 1.9700000000000002, 5.404998779296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="464cd321-adcd-4dd2-a8cf-d60e4373ee6e" isExpanded="false" absoluteBounds="0.5, 1, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Sys_Company" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a58b6ac7-f6cd-46b5-9503-56677dc54750" absoluteBounds="0.515, 1.46, 1.9700000000000002, 4.258880615234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3fc7b6b-6b72-4ab6-b200-1e7871843cea" isExpanded="false" absoluteBounds="0.5, 1.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Sys_Menu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e1d6609-75c4-4ba7-b4ac-88d83df16f1c" absoluteBounds="0.515, 1.96, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3664ab81-1348-4735-8ef0-3679a3d581f2" isExpanded="false" absoluteBounds="0.5, 2, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Sys_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52659076-7a29-44a7-a4d8-7c2898c52bb1" absoluteBounds="0.515, 2.46, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="11e25f13-c9fc-4cdf-a21d-bbfa694e948a" isExpanded="false" absoluteBounds="0.5, 2.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Sys_RoleAccount_R" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2339e7c-622e-47e8-a340-cb7f4a9ff956" absoluteBounds="0.515, 2.96, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5b897d2-d721-4fe4-ba1f-b4d0de9c8bba" isExpanded="false" absoluteBounds="0.5, 3, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Sys_RoleMenu_R" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40e149fb-4c2d-4061-b171-343950494841" absoluteBounds="0.515, 3.46, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bde64505-6dc6-453d-8250-ed0e4adf09b4" isExpanded="false" absoluteBounds="0.5, 3.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Sys_RoleStructure_R" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d89f3d6f-e2f3-4a82-ad0a-8320eb654851" absoluteBounds="0.515, 3.96, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d5d6753-41ff-49b3-830d-f3d91751400a" isExpanded="false" absoluteBounds="0.5, 4, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Sys_Structure" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67215195-a513-4912-8389-35ca2549ecde" absoluteBounds="0.515, 4.46, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c992788-5142-481e-8724-51a37ff0832c" isExpanded="false" absoluteBounds="0.5, 4.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Sys_UserDefined" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8d83cc2-51aa-491b-88be-85f7978ba8b4" absoluteBounds="0.515, 4.96, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9c1f90d8-6ca6-4d3a-bf30-bbdd4c044ce8" isExpanded="false" absoluteBounds="2.625, 3, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Basic_MaterialList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b57463fb-1841-4484-938b-b84c9e73200d" absoluteBounds="2.64, 3.46, 1.9700000000000002, 3.494801839192708" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d61a1c92-8b21-4ea1-b7c1-79e47e6c6bc1" isExpanded="false" absoluteBounds="4.75, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Accept_Receiving" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6da6a2c4-b021-4469-8124-c946a98692ad" absoluteBounds="4.765, 0.96, 1.9700000000000002, 5.5960184733072911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="416801f5-c78b-4471-84f2-bc5e8e3fbe02" isExpanded="false" absoluteBounds="2.625, 3.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Basic_SerialNumber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ebb90b91-cdcc-4089-9aa5-50dc067a8c58" absoluteBounds="2.64, 3.96, 1.9700000000000002, 3.876841227213542" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d97a5772-48b5-49d8-8713-9339f47581f1" isExpanded="false" absoluteBounds="2.625, 4, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Basic_SerialNumberDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22139f39-8a1a-4229-8b68-4655c8f6d6b8" absoluteBounds="2.64, 4.46, 1.9700000000000002, 4.067860921223958" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

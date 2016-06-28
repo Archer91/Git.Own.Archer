@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AcceptanceImpl" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/Accept.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/Accept.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/Accept.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.accept" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAcceptance_getAcceptReceivingList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAcceptReceivingList" />
+  </wsdl:message>
+  <wsdl:message name="IAcceptance_getAcceptReceivingList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAcceptReceivingListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAcceptance_saveAcceptReceiving_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveAcceptReceiving" />
+  </wsdl:message>
+  <wsdl:message name="IAcceptance_saveAcceptReceiving_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveAcceptReceivingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAcceptance_enableAndDisableReceivingByReceiveID_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableReceivingByReceiveID" />
+  </wsdl:message>
+  <wsdl:message name="IAcceptance_enableAndDisableReceivingByReceiveID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableReceivingByReceiveIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAcceptance">
+    <wsdl:operation name="getAcceptReceivingList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAcceptance/getAcceptReceivingList" message="tns:IAcceptance_getAcceptReceivingList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAcceptance/getAcceptReceivingListResponse" message="tns:IAcceptance_getAcceptReceivingList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveAcceptReceiving">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAcceptance/saveAcceptReceiving" message="tns:IAcceptance_saveAcceptReceiving_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAcceptance/saveAcceptReceivingResponse" message="tns:IAcceptance_saveAcceptReceiving_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableReceivingByReceiveID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAcceptance/enableAndDisableReceivingByReceiveID" message="tns:IAcceptance_enableAndDisableReceivingByReceiveID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAcceptance/enableAndDisableReceivingByReceiveIDResponse" message="tns:IAcceptance_enableAndDisableReceivingByReceiveID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAcceptance" type="tns:IAcceptance">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getAcceptReceivingList">
+      <soap:operation soapAction="http://tempuri.org/IAcceptance/getAcceptReceivingList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveAcceptReceiving">
+      <soap:operation soapAction="http://tempuri.org/IAcceptance/saveAcceptReceiving" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableReceivingByReceiveID">
+      <soap:operation soapAction="http://tempuri.org/IAcceptance/enableAndDisableReceivingByReceiveID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AcceptanceImpl">
+    <wsdl:port name="BasicHttpBinding_IAcceptance" binding="tns:BasicHttpBinding_IAcceptance">
+      <soap:address location="http://xiong-zhang-it.moderndentallab.net:9999/Accept.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

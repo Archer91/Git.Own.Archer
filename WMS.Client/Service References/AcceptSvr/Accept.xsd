@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/Accept.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.accept" />
+  <xs:element name="getAcceptReceivingList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAcceptReceivingListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.accept" minOccurs="0" name="getAcceptReceivingListResult" nillable="true" type="q1:ArrayOfAcceptReceivingVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAcceptReceiving">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.accept" minOccurs="0" name="pReceivingVO" nillable="true" type="q2:AcceptReceivingVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAcceptReceivingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveAcceptReceivingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableReceivingByReceiveID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pReceiveID" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableReceivingByReceiveIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableReceivingByReceiveIDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

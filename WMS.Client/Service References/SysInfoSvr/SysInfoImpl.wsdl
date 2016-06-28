@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SysInfoImpl" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISysInfo_getCompanyEasyList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyEasyList" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getCompanyEasyList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyEasyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_checkLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkLogin" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_checkLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleByAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleByAccount" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleByAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleByAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getMenuByRoleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMenuByRoleId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getMenuByRoleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMenuByRoleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getMenuList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMenuList" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getMenuList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMenuListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleList" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getCompanyList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyList" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getCompanyList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getStructureList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStructureList" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getStructureList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStructureListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getAccountList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAccountList" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getAccountList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAccountListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getUserDeinedList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserDeinedList" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getUserDeinedList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserDeinedListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveMenu" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveRole" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveCompany" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveStructure_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveStructure" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveStructure_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveStructureResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveAccount" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveUserDefined_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveUserDefined" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveUserDefined_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveUserDefinedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_changePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:changePassword" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_changePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:changePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_resetPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:resetPassword" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_resetPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:resetPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByMenuId_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByMenuId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByMenuId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByMenuIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByCompanyId_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByCompanyId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByCompanyId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByCompanyIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByStructureId_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByStructureId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByStructureId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByStructureIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByAccountId_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByAccountId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByAccountId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByAccountIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByRoleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByRoleId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByRoleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByRoleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByUdcId_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByUdcId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_enableAndDisableByUdcId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableByUdcIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleAccountByAccountId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleAccountByAccountId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleAccountByAccountId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleAccountByAccountIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_removeAccountId2Role_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeAccountId2Role" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_removeAccountId2Role_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeAccountId2RoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveAccountId2Role_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveAccountId2Role" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveAccountId2Role_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveAccountId2RoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleStructureByStructureId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleStructureByStructureId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleStructureByStructureId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleStructureByStructureIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_removeStructureId2Role_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeStructureId2Role" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_removeStructureId2Role_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeStructureId2RoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveStructureId2Role_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveStructureId2Role" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveStructureId2Role_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveStructureId2RoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleMenuByRoleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleMenuByRoleId" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_getRoleMenuByRoleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRoleMenuByRoleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_removeMenuId2Role_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeMenuId2Role" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_removeMenuId2Role_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeMenuId2RoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveMenuId2Role_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveMenuId2Role" />
+  </wsdl:message>
+  <wsdl:message name="ISysInfo_saveMenuId2Role_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveMenuId2RoleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISysInfo">
+    <wsdl:operation name="getCompanyEasyList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getCompanyEasyList" message="tns:ISysInfo_getCompanyEasyList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getCompanyEasyListResponse" message="tns:ISysInfo_getCompanyEasyList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/checkLogin" message="tns:ISysInfo_checkLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/checkLoginResponse" message="tns:ISysInfo_checkLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoleByAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getRoleByAccount" message="tns:ISysInfo_getRoleByAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getRoleByAccountResponse" message="tns:ISysInfo_getRoleByAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMenuByRoleId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getMenuByRoleId" message="tns:ISysInfo_getMenuByRoleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getMenuByRoleIdResponse" message="tns:ISysInfo_getMenuByRoleId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMenuList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getMenuList" message="tns:ISysInfo_getMenuList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getMenuListResponse" message="tns:ISysInfo_getMenuList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoleList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getRoleList" message="tns:ISysInfo_getRoleList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getRoleListResponse" message="tns:ISysInfo_getRoleList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getCompanyList" message="tns:ISysInfo_getCompanyList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getCompanyListResponse" message="tns:ISysInfo_getCompanyList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStructureList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getStructureList" message="tns:ISysInfo_getStructureList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getStructureListResponse" message="tns:ISysInfo_getStructureList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAccountList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getAccountList" message="tns:ISysInfo_getAccountList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getAccountListResponse" message="tns:ISysInfo_getAccountList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserDeinedList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getUserDeinedList" message="tns:ISysInfo_getUserDeinedList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getUserDeinedListResponse" message="tns:ISysInfo_getUserDeinedList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveMenu">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/saveMenu" message="tns:ISysInfo_saveMenu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/saveMenuResponse" message="tns:ISysInfo_saveMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/saveRole" message="tns:ISysInfo_saveRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/saveRoleResponse" message="tns:ISysInfo_saveRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/saveCompany" message="tns:ISysInfo_saveCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/saveCompanyResponse" message="tns:ISysInfo_saveCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveStructure">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/saveStructure" message="tns:ISysInfo_saveStructure_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/saveStructureResponse" message="tns:ISysInfo_saveStructure_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/saveAccount" message="tns:ISysInfo_saveAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/saveAccountResponse" message="tns:ISysInfo_saveAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveUserDefined">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/saveUserDefined" message="tns:ISysInfo_saveUserDefined_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/saveUserDefinedResponse" message="tns:ISysInfo_saveUserDefined_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/changePassword" message="tns:ISysInfo_changePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/changePasswordResponse" message="tns:ISysInfo_changePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="resetPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/resetPassword" message="tns:ISysInfo_resetPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/resetPasswordResponse" message="tns:ISysInfo_resetPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByMenuId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByMenuId" message="tns:ISysInfo_enableAndDisableByMenuId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByMenuIdResponse" message="tns:ISysInfo_enableAndDisableByMenuId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByCompanyId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByCompanyId" message="tns:ISysInfo_enableAndDisableByCompanyId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByCompanyIdResponse" message="tns:ISysInfo_enableAndDisableByCompanyId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByStructureId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByStructureId" message="tns:ISysInfo_enableAndDisableByStructureId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByStructureIdResponse" message="tns:ISysInfo_enableAndDisableByStructureId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByAccountId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByAccountId" message="tns:ISysInfo_enableAndDisableByAccountId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByAccountIdResponse" message="tns:ISysInfo_enableAndDisableByAccountId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByRoleId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByRoleId" message="tns:ISysInfo_enableAndDisableByRoleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByRoleIdResponse" message="tns:ISysInfo_enableAndDisableByRoleId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByUdcId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByUdcId" message="tns:ISysInfo_enableAndDisableByUdcId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/enableAndDisableByUdcIdResponse" message="tns:ISysInfo_enableAndDisableByUdcId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoleAccountByAccountId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getRoleAccountByAccountId" message="tns:ISysInfo_getRoleAccountByAccountId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getRoleAccountByAccountIdResponse" message="tns:ISysInfo_getRoleAccountByAccountId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeAccountId2Role">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/removeAccountId2Role" message="tns:ISysInfo_removeAccountId2Role_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/removeAccountId2RoleResponse" message="tns:ISysInfo_removeAccountId2Role_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveAccountId2Role">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/saveAccountId2Role" message="tns:ISysInfo_saveAccountId2Role_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/saveAccountId2RoleResponse" message="tns:ISysInfo_saveAccountId2Role_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoleStructureByStructureId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getRoleStructureByStructureId" message="tns:ISysInfo_getRoleStructureByStructureId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getRoleStructureByStructureIdResponse" message="tns:ISysInfo_getRoleStructureByStructureId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeStructureId2Role">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/removeStructureId2Role" message="tns:ISysInfo_removeStructureId2Role_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/removeStructureId2RoleResponse" message="tns:ISysInfo_removeStructureId2Role_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveStructureId2Role">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/saveStructureId2Role" message="tns:ISysInfo_saveStructureId2Role_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/saveStructureId2RoleResponse" message="tns:ISysInfo_saveStructureId2Role_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoleMenuByRoleId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/getRoleMenuByRoleId" message="tns:ISysInfo_getRoleMenuByRoleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/getRoleMenuByRoleIdResponse" message="tns:ISysInfo_getRoleMenuByRoleId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeMenuId2Role">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/removeMenuId2Role" message="tns:ISysInfo_removeMenuId2Role_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/removeMenuId2RoleResponse" message="tns:ISysInfo_removeMenuId2Role_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveMenuId2Role">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISysInfo/saveMenuId2Role" message="tns:ISysInfo_saveMenuId2Role_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISysInfo/saveMenuId2RoleResponse" message="tns:ISysInfo_saveMenuId2Role_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISysInfo" type="tns:ISysInfo">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCompanyEasyList">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getCompanyEasyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkLogin">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/checkLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoleByAccount">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getRoleByAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMenuByRoleId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getMenuByRoleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMenuList">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getMenuList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoleList">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getRoleList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyList">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getCompanyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStructureList">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getStructureList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccountList">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getAccountList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserDeinedList">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getUserDeinedList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveMenu">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/saveMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveRole">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/saveRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveCompany">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/saveCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveStructure">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/saveStructure" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveAccount">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/saveAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveUserDefined">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/saveUserDefined" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/changePassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resetPassword">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/resetPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByMenuId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/enableAndDisableByMenuId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByCompanyId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/enableAndDisableByCompanyId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByStructureId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/enableAndDisableByStructureId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByAccountId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/enableAndDisableByAccountId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByRoleId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/enableAndDisableByRoleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableByUdcId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/enableAndDisableByUdcId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoleAccountByAccountId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getRoleAccountByAccountId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeAccountId2Role">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/removeAccountId2Role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveAccountId2Role">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/saveAccountId2Role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoleStructureByStructureId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getRoleStructureByStructureId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeStructureId2Role">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/removeStructureId2Role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveStructureId2Role">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/saveStructureId2Role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoleMenuByRoleId">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/getRoleMenuByRoleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeMenuId2Role">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/removeMenuId2Role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveMenuId2Role">
+      <soap:operation soapAction="http://tempuri.org/ISysInfo/saveMenuId2Role" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SysInfoImpl">
+    <wsdl:port name="BasicHttpBinding_ISysInfo" binding="tns:BasicHttpBinding_ISysInfo">
+      <soap:address location="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6381E2B-C246-4D80-B06A-809EA8E35172}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMS.Client</RootNamespace>
+    <AssemblyName>WMS.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Util.Archer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>util\Common.Util.Archer.dll</HintPath>
+    </Reference>
+    <Reference Include="Extension.Util.Archer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>util\Extension.Util.Archer.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin4, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=127be25a6db25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>util\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acceptance\Fm_AcceptCheck2PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acceptance\Fm_AcceptCheck2PO.Designer.cs">
+      <DependentUpon>Fm_AcceptCheck2PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acceptance\Fm_AcceptReceiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acceptance\Fm_AcceptReceiving.Designer.cs">
+      <DependentUpon>Fm_AcceptReceiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acceptance\Fm_AcceptCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acceptance\Fm_AcceptCheck.Designer.cs">
+      <DependentUpon>Fm_AcceptCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="acceptance\Fm_AcceptReceivingInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acceptance\Fm_AcceptReceivingInfo.Designer.cs">
+      <DependentUpon>Fm_AcceptReceivingInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basic\Fm_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basic\Fm_Customer.Designer.cs">
+      <DependentUpon>Fm_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basic\Fm_ItemCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basic\Fm_ItemCategory.Designer.cs">
+      <DependentUpon>Fm_ItemCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basic\Fm_Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basic\Fm_Location.Designer.cs">
+      <DependentUpon>Fm_Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basic\Fm_Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basic\Fm_Material.Designer.cs">
+      <DependentUpon>Fm_Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basic\Fm_SerialNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basic\Fm_SerialNumber.Designer.cs">
+      <DependentUpon>Fm_SerialNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basic\Fm_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basic\Fm_Supplier.Designer.cs">
+      <DependentUpon>Fm_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="basic\Fm_Warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basic\Fm_Warehouse.Designer.cs">
+      <DependentUpon>Fm_Warehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_ChangePwd.Designer.cs">
+      <DependentUpon>Fm_ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Login.Designer.cs">
+      <DependentUpon>Fm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_Main.Designer.cs">
+      <DependentUpon>Fm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_SwitchCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SwitchCompany.Designer.cs">
+      <DependentUpon>Fm_SwitchCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fm_SwitchRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fm_SwitchRole.Designer.cs">
+      <DependentUpon>Fm_SwitchRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AcceptSvr\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BasicSvr\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SysInfoSvr\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="sys\Fm_SysAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sys\Fm_SysAccount.Designer.cs">
+      <DependentUpon>Fm_SysAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sys\Fm_SysCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sys\Fm_SysCompany.Designer.cs">
+      <DependentUpon>Fm_SysCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sys\Fm_SysStructure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sys\Fm_SysStructure.Designer.cs">
+      <DependentUpon>Fm_SysStructure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sys\Fm_SysMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sys\Fm_SysMenu.Designer.cs">
+      <DependentUpon>Fm_SysMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sys\Fm_SysRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sys\Fm_SysRole.Designer.cs">
+      <DependentUpon>Fm_SysRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sys\Fm_SysUserDefined.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sys\Fm_SysUserDefined.Designer.cs">
+      <DependentUpon>Fm_SysUserDefined.cs</DependentUpon>
+    </Compile>
+    <Compile Include="util\ListItemUtil.cs" />
+    <Compile Include="util\ConfigUtil.cs" />
+    <Compile Include="util\PubInfoUtil.cs" />
+    <Compile Include="util\PubMethods.cs" />
+    <EmbeddedResource Include="acceptance\Fm_AcceptCheck.resx">
+      <DependentUpon>Fm_AcceptCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acceptance\Fm_AcceptCheck2PO.resx">
+      <DependentUpon>Fm_AcceptCheck2PO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acceptance\Fm_AcceptReceiving.resx">
+      <DependentUpon>Fm_AcceptReceiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="acceptance\Fm_AcceptReceivingInfo.resx">
+      <DependentUpon>Fm_AcceptReceivingInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basic\Fm_Customer.resx">
+      <DependentUpon>Fm_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basic\Fm_ItemCategory.resx">
+      <DependentUpon>Fm_ItemCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basic\Fm_Location.resx">
+      <DependentUpon>Fm_Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basic\Fm_Material.resx">
+      <DependentUpon>Fm_Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basic\Fm_SerialNumber.resx">
+      <DependentUpon>Fm_SerialNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basic\Fm_Supplier.resx">
+      <DependentUpon>Fm_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basic\Fm_Warehouse.resx">
+      <DependentUpon>Fm_Warehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_ChangePwd.resx">
+      <DependentUpon>Fm_ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Login.resx">
+      <DependentUpon>Fm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_Main.resx">
+      <DependentUpon>Fm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_SwitchCompany.resx">
+      <DependentUpon>Fm_SwitchCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fm_SwitchRole.resx">
+      <DependentUpon>Fm_SwitchRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sys\Fm_SysAccount.resx">
+      <DependentUpon>Fm_SysAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sys\Fm_SysCompany.resx">
+      <DependentUpon>Fm_SysCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sys\Fm_SysStructure.resx">
+      <DependentUpon>Fm_SysStructure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sys\Fm_SysMenu.resx">
+      <DependentUpon>Fm_SysMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sys\Fm_SysRole.resx">
+      <DependentUpon>Fm_SysRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sys\Fm_SysUserDefined.resx">
+      <DependentUpon>Fm_SysUserDefined.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\AcceptSvr\Accept.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AcceptSvr\Accept1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AcceptSvr\Accept2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AcceptSvr\AcceptanceImpl.wsdl" />
+    <None Include="Service References\AcceptSvr\WMS.Client.AcceptSvr.AcceptReceivingVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BasicSvr\Basic1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BasicSvr\Basic2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BasicSvr\Basic3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BasicSvr\BasicImpl.wsdl" />
+    <None Include="Service References\BasicSvr\WMS.Client.BasicSvr.CustomerVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BasicSvr\WMS.Client.BasicSvr.ItemCategoryVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BasicSvr\WMS.Client.BasicSvr.LocationVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BasicSvr\WMS.Client.BasicSvr.MaterialVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BasicSvr\WMS.Client.BasicSvr.SerialNumberVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BasicSvr\WMS.Client.BasicSvr.SupplierVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BasicSvr\WMS.Client.BasicSvr.WarehouseVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\SysInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SysInfoSvr\SysInfo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SysInfoSvr\SysInfo3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SysInfoSvr\SysInfoImpl.wsdl" />
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysAccountEasyVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysAccountVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysCompanyEasyVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysCompanyVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysMenuVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysRoleAccountVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysRoleEasyVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysRoleMenuVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysRoleStructureVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysRoleVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysStructureVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SysInfoSvr\WMS.Client.SysInfoSvr.SysUserDefinedVO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="skins\Calmness.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\CalmnessColor1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\CalmnessColor2.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\DeepCyan.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\DeepGreen.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\DeepOrange.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\DiamondBlue.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\DiamondGreen.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\DiamondOlive.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\DiamondPurple.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\DiamondRed.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Eighteen.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\EighteenColor1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\EighteenColor2.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Emerald.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\EmeraldColor1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\EmeraldColor2.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\EmeraldColor3.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\GlassBrown.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\GlassGreen.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\GlassOrange.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Longhorn.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\MacOS.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Midsummer.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\MidsummerColor1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\MidsummerColor2.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\MidsummerColor3.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\mp10.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\mp10green.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\mp10maroon.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\mp10mulberry.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\mp10pink.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\mp10purple.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\MSN.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\office2007.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\OneBlue.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\OneCyan.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\OneGreen.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\OneOrange.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Page.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\PageColor1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\PageColor2.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\RealOne.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Silver.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\SilverColor1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\SilverColor2.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\SportsBlack.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\SportsBlue.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\SportsCyan.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\SportsGreen.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\SportsOrange.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\SteelBlack.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\SteelBlue.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\vista1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\vista1_green.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Vista2_color1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Vista2_color2.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Vista2_color3.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Vista2_color4.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Vista2_color5.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Vista2_color6.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Vista2_color7.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Warm.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\WarmColor1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\WarmColor2.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\WarmColor3.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\Wave.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\WaveColor1.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\WaveColor2.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\XPBlue.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\XPGreen.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\XPOrange.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="skins\XPSilver.ssk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\sysconfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\address.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\advertising.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\bank.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\bookmark.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\busy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\category.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\category.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\check.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\config.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\customers.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\customers.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\database.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\document_library.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\edit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\flag.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\home.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\lock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\login.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\logo.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\logout.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\my_account.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\my_account.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\p001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\plus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\process.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\product_169.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\refresh.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\search.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\settings.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\settings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\shipping.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\sign_up.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\sitemap.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\suppliers.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\suppliers.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\upcoming_work.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\user.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\user.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\world.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icon\world.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\001.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="util\PictureView.dll" />
+    <None Include="Service References\AcceptSvr\Accept.disco" />
+    <None Include="Service References\AcceptSvr\configuration91.svcinfo" />
+    <None Include="Service References\AcceptSvr\configuration.svcinfo" />
+    <None Include="Service References\AcceptSvr\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="image\logo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logo.ico" />
+    <Content Include="util\Common.Util.Archer.dll" />
+    <Content Include="util\IrisSkin4.dll" />
+    <None Include="Service References\BasicSvr\Basic.disco" />
+    <None Include="Service References\BasicSvr\configuration91.svcinfo" />
+    <None Include="Service References\BasicSvr\configuration.svcinfo" />
+    <None Include="Service References\BasicSvr\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SysInfoSvr\SysInfo.disco" />
+    <Content Include="util\Extension.Util.Archer.dll" />
+    <None Include="Service References\SysInfoSvr\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SysInfoSvr\configuration.svcinfo" />
+    <None Include="Service References\SysInfoSvr\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AcceptSvr\" />
+    <WCFMetadataStorage Include="Service References\BasicSvr\" />
+    <WCFMetadataStorage Include="Service References\SysInfoSvr\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="inbound\" />
+    <Folder Include="inventory\" />
+    <Folder Include="outbound\" />
+    <Folder Include="report\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

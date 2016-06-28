@@ -1,0 +1,114 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WMS.Lib.util" GeneratedClassName="ErrorInfo">
+  <Profiles />
+  <Settings>
+    <Setting Name="ER000" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">未知错误</Value>
+    </Setting>
+    <Setting Name="ER001" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">参数为空</Value>
+    </Setting>
+    <Setting Name="ER002" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">用户【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER003" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">用户【{0}】已失效</Value>
+    </Setting>
+    <Setting Name="ER004" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">口令错误</Value>
+    </Setting>
+    <Setting Name="ER005" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">用户【{0}】未授权</Value>
+    </Setting>
+    <Setting Name="ER006" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">角色【{0}】未关联菜单</Value>
+    </Setting>
+    <Setting Name="ER007" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的菜单信息</Value>
+    </Setting>
+    <Setting Name="ER008" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">菜单【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER009" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的角色信息</Value>
+    </Setting>
+    <Setting Name="ER010" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">角色【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER011" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的公司信息</Value>
+    </Setting>
+    <Setting Name="ER012" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">公司【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER013" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的部门信息</Value>
+    </Setting>
+    <Setting Name="ER014" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">部门【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER015" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的用户信息</Value>
+    </Setting>
+    <Setting Name="ER016" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">用户【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER017" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的自定义信息</Value>
+    </Setting>
+    <Setting Name="ER018" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">自定义【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER019" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的仓储信息</Value>
+    </Setting>
+    <Setting Name="ER020" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">仓储【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER021" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的库位信息</Value>
+    </Setting>
+    <Setting Name="ER022" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">库位【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER023" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的客户信息</Value>
+    </Setting>
+    <Setting Name="ER024" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">客户【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER025" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的供应商信息</Value>
+    </Setting>
+    <Setting Name="ER026" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">供应商【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER027" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的物料分类信息</Value>
+    </Setting>
+    <Setting Name="ER028" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">物料分类【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER029" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在名为【{0}】的物料信息</Value>
+    </Setting>
+    <Setting Name="ER030" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">物料【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER031" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在编号为【{0}】的接收信息</Value>
+    </Setting>
+    <Setting Name="ER032" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">接收编号【{0}】不存在</Value>
+    </Setting>
+    <Setting Name="ER033" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">已存在类型为【{0}】的序列号信息</Value>
+    </Setting>
+    <Setting Name="ER034" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">类型为【{0}】的序列号信息不存在</Value>
+    </Setting>
+    <Setting Name="ER035" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">序号超出设定长度</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

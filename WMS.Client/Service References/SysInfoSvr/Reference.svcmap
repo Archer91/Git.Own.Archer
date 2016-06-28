@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2cdbb2bf-1b11-4757-9594-b85524ce0cd9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.8.53:9999/SysInfo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SysInfo.xsd" MetadataType="Schema" ID="f9af1870-c0f5-4257-a22f-b0bccc4a6ee1" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc?xsd=xsd0" />
+    <MetadataFile FileName="SysInfo3.xsd" MetadataType="Schema" ID="b7ea23d4-df5c-4a24-9624-06fdba3cfeb7" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc?xsd=xsd1" />
+    <MetadataFile FileName="SysInfo1.xsd" MetadataType="Schema" ID="aa28ec3f-0cc4-4788-901e-ed9ca6f60199" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc?xsd=xsd2" />
+    <MetadataFile FileName="SysInfoImpl.wsdl" MetadataType="Wsdl" ID="7f93a862-ba83-4986-ac95-45e514e093fd" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc?wsdl" />
+    <MetadataFile FileName="SysInfo.disco" MetadataType="Disco" ID="a49b95aa-8065-493d-9e1d-4934fe0ad647" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfWarehouseVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WarehouseVO" nillable="true" type="tns:WarehouseVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWarehouseVO" nillable="true" type="tns:ArrayOfWarehouseVO" />
+  <xs:complexType name="WarehouseVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WareName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WarehouseVO" nillable="true" type="tns:WarehouseVO" />
+  <xs:complexType name="ArrayOfLocationVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LocationVO" nillable="true" type="tns:LocationVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLocationVO" nillable="true" type="tns:ArrayOfLocationVO" />
+  <xs:complexType name="LocationVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="LocationName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WarehouseDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WarehouseID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LocationVO" nillable="true" type="tns:LocationVO" />
+  <xs:complexType name="ArrayOfCustomerVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerVO" nillable="true" type="tns:CustomerVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerVO" nillable="true" type="tns:ArrayOfCustomerVO" />
+  <xs:complexType name="CustomerVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Contacts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerVO" nillable="true" type="tns:CustomerVO" />
+  <xs:complexType name="ArrayOfSupplierVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SupplierVO" nillable="true" type="tns:SupplierVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSupplierVO" nillable="true" type="tns:ArrayOfSupplierVO" />
+  <xs:complexType name="SupplierVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Contacts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SupplierName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SupplierVO" nillable="true" type="tns:SupplierVO" />
+  <xs:complexType name="ArrayOfItemCategoryVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ItemCategoryVO" nillable="true" type="tns:ItemCategoryVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItemCategoryVO" nillable="true" type="tns:ArrayOfItemCategoryVO" />
+  <xs:complexType name="ItemCategoryVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemCategoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItemCategoryVO" nillable="true" type="tns:ItemCategoryVO" />
+  <xs:complexType name="ArrayOfMaterialVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MaterialVO" nillable="true" type="tns:MaterialVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMaterialVO" nillable="true" type="tns:ArrayOfMaterialVO" />
+  <xs:complexType name="MaterialVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SupplierDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SupplierID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MaterialVO" nillable="true" type="tns:MaterialVO" />
+  <xs:complexType name="ArrayOfSerialNumberVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SerialNumberVO" nillable="true" type="tns:SerialNumberVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSerialNumberVO" nillable="true" type="tns:ArrayOfSerialNumberVO" />
+  <xs:complexType name="SerialNumberVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyID" type="xs:int" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Prefix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SeqLength" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SeqStep" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Suffix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YYMMDD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SerialNumberVO" nillable="true" type="tns:SerialNumberVO" />
+</xs:schema>

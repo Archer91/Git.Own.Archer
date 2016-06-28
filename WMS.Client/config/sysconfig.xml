@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SysSet>
+  <!--系统标题-->
+  <SysTitle> XXX 信息系统平台</SysTitle>
+  <!--系统皮肤-->
+  <SysSkin>skins\mp10.ssk</SysSkin>
+  
+</SysSet>

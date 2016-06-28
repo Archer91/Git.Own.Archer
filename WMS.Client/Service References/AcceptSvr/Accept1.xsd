@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.accept" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.accept" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfAcceptReceivingVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AcceptReceivingVO" nillable="true" type="tns:AcceptReceivingVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAcceptReceivingVO" nillable="true" type="tns:ArrayOfAcceptReceivingVO" />
+  <xs:complexType name="AcceptReceivingVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyID" type="xs:int" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryCompany" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryMan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeliveryMode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="IsNotice" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Names" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="No" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoticeDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pieces" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ReceivingDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReceivingPerson" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShipAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Shipper" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StorageLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrackingNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Weight" nillable="true" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AcceptReceivingVO" nillable="true" type="tns:AcceptReceivingVO" />
+</xs:schema>

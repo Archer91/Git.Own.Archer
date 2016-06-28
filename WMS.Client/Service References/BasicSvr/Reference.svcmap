@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a0fba0db-6144-417b-9dc2-b6fbaa341f7b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.8.53:9999/Basic.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Basic1.xsd" MetadataType="Schema" ID="18b6b62a-d2f2-49ce-9e1a-c32786a7ad08" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc?xsd=xsd2" />
+    <MetadataFile FileName="BasicImpl.wsdl" MetadataType="Wsdl" ID="2a2aeaa5-b410-44e7-8f5a-375c7a60c669" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc?wsdl" />
+    <MetadataFile FileName="Basic3.xsd" MetadataType="Schema" ID="ff1bc774-9ff8-4890-956c-e9e87fd1712b" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc?xsd=xsd1" />
+    <MetadataFile FileName="Basic.disco" MetadataType="Disco" ID="5e60d1b6-40c5-42c4-a748-3bca0565d8a1" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc?disco" />
+    <MetadataFile FileName="Basic2.xsd" MetadataType="Schema" ID="962ac054-0b63-42d3-8455-acea3026962b" SourceId="1" SourceUrl="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

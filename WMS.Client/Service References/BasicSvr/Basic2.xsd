@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" />
+  <xs:element name="getWarehouseList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getWarehouseListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="getWarehouseListResult" nillable="true" type="q1:ArrayOfWarehouseVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLocationList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLocationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="getLocationListResult" nillable="true" type="q2:ArrayOfLocationVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCustomerList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCustomerListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="getCustomerListResult" nillable="true" type="q3:ArrayOfCustomerVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSupplierList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSupplierListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="getSupplierListResult" nillable="true" type="q4:ArrayOfSupplierVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getItemCategoryList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getItemCategoryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="getItemCategoryListResult" nillable="true" type="q5:ArrayOfItemCategoryVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMaterialList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMaterialListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="getMaterialListResult" nillable="true" type="q6:ArrayOfMaterialVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveWarehouse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="pWarehouseVO" nillable="true" type="q7:WarehouseVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveWarehouseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveWarehouseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveLocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="pLocationVO" nillable="true" type="q8:LocationVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveLocationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveLocationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveCustomer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="pCustomerVO" nillable="true" type="q9:CustomerVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveCustomerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveCustomerResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveSupplier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="pSupplierVO" nillable="true" type="q10:SupplierVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveSupplierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveSupplierResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveItemCategory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="pItemCategoryVO" nillable="true" type="q11:ItemCategoryVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveItemCategoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveItemCategoryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveMaterial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="pMaterialVO" nillable="true" type="q12:MaterialVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveMaterialResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveMaterialResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableWarehouseByWareID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pWarehouseID" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableWarehouseByWareIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableWarehouseByWareIDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableLocationByLocationID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pLocationID" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableLocationByLocationIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableLocationByLocationIDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableCustomerByCustomerID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pCustomerID" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableCustomerByCustomerIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableCustomerByCustomerIDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableSupplierBySupplierID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pSupplierID" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableSupplierBySupplierIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableSupplierBySupplierIDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableItemCategoryByItemCategoryID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pItemCategoryID" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableItemCategoryByItemCategoryIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableItemCategoryByItemCategoryIDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableMaterialByMaterialID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pMaterialID" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableMaterialByMaterialIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableMaterialByMaterialIDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLocationByWarehouseID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pWarehouseID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLocationByWarehouseIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="getLocationByWarehouseIDResult" nillable="true" type="q13:ArrayOfLocationVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMaterialByCategoryID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pCategoryID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMaterialByCategoryIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="getMaterialByCategoryIDResult" nillable="true" type="q14:ArrayOfMaterialVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSerialNumberList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSerialNumberListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="getSerialNumberListResult" nillable="true" type="q15:ArrayOfSerialNumberVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveSerialNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" minOccurs="0" name="pSNVO" nillable="true" type="q16:SerialNumberVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveSerialNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveSerialNumberResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableSerialNumberBySerialID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pSerialID" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableSerialNumberBySerialIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableSerialNumberBySerialIDResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pCompanyID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSNResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getSNResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

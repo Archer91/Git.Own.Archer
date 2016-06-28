@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfSysCompanyEasyVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysCompanyEasyVO" nillable="true" type="tns:SysCompanyEasyVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysCompanyEasyVO" nillable="true" type="tns:ArrayOfSysCompanyEasyVO" />
+  <xs:complexType name="SysCompanyEasyVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysCompanyEasyVO" nillable="true" type="tns:SysCompanyEasyVO" />
+  <xs:complexType name="SysAccountEasyVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysAccountEasyVO" nillable="true" type="tns:SysAccountEasyVO" />
+  <xs:complexType name="ArrayOfSysRoleEasyVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysRoleEasyVO" nillable="true" type="tns:SysRoleEasyVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysRoleEasyVO" nillable="true" type="tns:ArrayOfSysRoleEasyVO" />
+  <xs:complexType name="SysRoleEasyVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysRoleEasyVO" nillable="true" type="tns:SysRoleEasyVO" />
+  <xs:complexType name="ArrayOfSysMenuVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysMenuVO" nillable="true" type="tns:SysMenuVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysMenuVO" nillable="true" type="tns:ArrayOfSysMenuVO" />
+  <xs:complexType name="SysMenuVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CmdExe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CmdForm" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Icon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MenuName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysMenuVO" nillable="true" type="tns:SysMenuVO" />
+  <xs:complexType name="ArrayOfSysRoleVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysRoleVO" nillable="true" type="tns:SysRoleVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysRoleVO" nillable="true" type="tns:ArrayOfSysRoleVO" />
+  <xs:complexType name="SysRoleVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysRoleVO" nillable="true" type="tns:SysRoleVO" />
+  <xs:complexType name="ArrayOfSysCompanyVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysCompanyVO" nillable="true" type="tns:SysCompanyVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysCompanyVO" nillable="true" type="tns:ArrayOfSysCompanyVO" />
+  <xs:complexType name="SysCompanyVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Contacts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Corporation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="RegistrationNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysCompanyVO" nillable="true" type="tns:SysCompanyVO" />
+  <xs:complexType name="ArrayOfSysStructureVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysStructureVO" nillable="true" type="tns:SysStructureVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysStructureVO" nillable="true" type="tns:ArrayOfSysStructureVO" />
+  <xs:complexType name="SysStructureVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StructureName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysStructureVO" nillable="true" type="tns:SysStructureVO" />
+  <xs:complexType name="ArrayOfSysAccountVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysAccountVO" nillable="true" type="tns:SysAccountVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysAccountVO" nillable="true" type="tns:ArrayOfSysAccountVO" />
+  <xs:complexType name="SysAccountVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Age" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Education" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmergencyContacts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmergencyPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnglishName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HireDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Marriage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sex" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StructureDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StructureID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Tel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysAccountVO" nillable="true" type="tns:SysAccountVO" />
+  <xs:complexType name="ArrayOfSysUserDefinedVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysUserDefinedVO" nillable="true" type="tns:SysUserDefinedVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysUserDefinedVO" nillable="true" type="tns:ArrayOfSysUserDefinedVO" />
+  <xs:complexType name="SysUserDefinedVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StatusDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SysCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpdateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UpdatedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysUserDefinedVO" nillable="true" type="tns:SysUserDefinedVO" />
+  <xs:complexType name="ArrayOfSysRoleAccountVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysRoleAccountVO" nillable="true" type="tns:SysRoleAccountVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysRoleAccountVO" nillable="true" type="tns:ArrayOfSysRoleAccountVO" />
+  <xs:complexType name="SysRoleAccountVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountID" type="xs:int" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysRoleAccountVO" nillable="true" type="tns:SysRoleAccountVO" />
+  <xs:complexType name="ArrayOfSysRoleStructureVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysRoleStructureVO" nillable="true" type="tns:SysRoleStructureVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysRoleStructureVO" nillable="true" type="tns:ArrayOfSysRoleStructureVO" />
+  <xs:complexType name="SysRoleStructureVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+      <xs:element minOccurs="0" name="StructureID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysRoleStructureVO" nillable="true" type="tns:SysRoleStructureVO" />
+  <xs:complexType name="ArrayOfSysRoleMenuVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysRoleMenuVO" nillable="true" type="tns:SysRoleMenuVO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysRoleMenuVO" nillable="true" type="tns:ArrayOfSysRoleMenuVO" />
+  <xs:complexType name="SysRoleMenuVO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="MenuID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysRoleMenuVO" nillable="true" type="tns:SysRoleMenuVO" />
+</xs:schema>

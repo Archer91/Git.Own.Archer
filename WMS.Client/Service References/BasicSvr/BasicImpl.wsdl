@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BasicImpl" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.basic" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBasic_getWarehouseList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getWarehouseList" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getWarehouseList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getWarehouseListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getLocationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocationList" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getLocationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getCustomerList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getCustomerList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getSupplierList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSupplierList" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getSupplierList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSupplierListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getItemCategoryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getItemCategoryList" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getItemCategoryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getItemCategoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getMaterialList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMaterialList" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getMaterialList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMaterialListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveWarehouse_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveWarehouse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveWarehouse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveWarehouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveLocation" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveSupplier_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveSupplier" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveSupplier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveSupplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveItemCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveItemCategory" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveItemCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveItemCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveMaterial_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveMaterial" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveMaterial_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveMaterialResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableWarehouseByWareID_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableWarehouseByWareID" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableWarehouseByWareID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableWarehouseByWareIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableLocationByLocationID_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableLocationByLocationID" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableLocationByLocationID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableLocationByLocationIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableCustomerByCustomerID_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableCustomerByCustomerID" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableCustomerByCustomerID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableCustomerByCustomerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableSupplierBySupplierID_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableSupplierBySupplierID" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableSupplierBySupplierID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableSupplierBySupplierIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableItemCategoryByItemCategoryID_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableItemCategoryByItemCategoryID" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableItemCategoryByItemCategoryID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableItemCategoryByItemCategoryIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableMaterialByMaterialID_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableMaterialByMaterialID" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableMaterialByMaterialID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableMaterialByMaterialIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getLocationByWarehouseID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocationByWarehouseID" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getLocationByWarehouseID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocationByWarehouseIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getMaterialByCategoryID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMaterialByCategoryID" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getMaterialByCategoryID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMaterialByCategoryIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getSerialNumberList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSerialNumberList" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getSerialNumberList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSerialNumberListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveSerialNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:saveSerialNumber" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_saveSerialNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:saveSerialNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableSerialNumberBySerialID_InputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableSerialNumberBySerialID" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_enableAndDisableSerialNumberBySerialID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:enableAndDisableSerialNumberBySerialIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getSN_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSN" />
+  </wsdl:message>
+  <wsdl:message name="IBasic_getSN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSNResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBasic">
+    <wsdl:operation name="getWarehouseList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getWarehouseList" message="tns:IBasic_getWarehouseList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getWarehouseListResponse" message="tns:IBasic_getWarehouseList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getLocationList" message="tns:IBasic_getLocationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getLocationListResponse" message="tns:IBasic_getLocationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getCustomerList" message="tns:IBasic_getCustomerList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getCustomerListResponse" message="tns:IBasic_getCustomerList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSupplierList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getSupplierList" message="tns:IBasic_getSupplierList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getSupplierListResponse" message="tns:IBasic_getSupplierList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getItemCategoryList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getItemCategoryList" message="tns:IBasic_getItemCategoryList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getItemCategoryListResponse" message="tns:IBasic_getItemCategoryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getMaterialList" message="tns:IBasic_getMaterialList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getMaterialListResponse" message="tns:IBasic_getMaterialList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveWarehouse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/saveWarehouse" message="tns:IBasic_saveWarehouse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/saveWarehouseResponse" message="tns:IBasic_saveWarehouse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveLocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/saveLocation" message="tns:IBasic_saveLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/saveLocationResponse" message="tns:IBasic_saveLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/saveCustomer" message="tns:IBasic_saveCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/saveCustomerResponse" message="tns:IBasic_saveCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveSupplier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/saveSupplier" message="tns:IBasic_saveSupplier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/saveSupplierResponse" message="tns:IBasic_saveSupplier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveItemCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/saveItemCategory" message="tns:IBasic_saveItemCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/saveItemCategoryResponse" message="tns:IBasic_saveItemCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveMaterial">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/saveMaterial" message="tns:IBasic_saveMaterial_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/saveMaterialResponse" message="tns:IBasic_saveMaterial_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableWarehouseByWareID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/enableAndDisableWarehouseByWareID" message="tns:IBasic_enableAndDisableWarehouseByWareID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/enableAndDisableWarehouseByWareIDResponse" message="tns:IBasic_enableAndDisableWarehouseByWareID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableLocationByLocationID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/enableAndDisableLocationByLocationID" message="tns:IBasic_enableAndDisableLocationByLocationID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/enableAndDisableLocationByLocationIDResponse" message="tns:IBasic_enableAndDisableLocationByLocationID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableCustomerByCustomerID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/enableAndDisableCustomerByCustomerID" message="tns:IBasic_enableAndDisableCustomerByCustomerID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/enableAndDisableCustomerByCustomerIDResponse" message="tns:IBasic_enableAndDisableCustomerByCustomerID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableSupplierBySupplierID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/enableAndDisableSupplierBySupplierID" message="tns:IBasic_enableAndDisableSupplierBySupplierID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/enableAndDisableSupplierBySupplierIDResponse" message="tns:IBasic_enableAndDisableSupplierBySupplierID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableItemCategoryByItemCategoryID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/enableAndDisableItemCategoryByItemCategoryID" message="tns:IBasic_enableAndDisableItemCategoryByItemCategoryID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/enableAndDisableItemCategoryByItemCategoryIDResponse" message="tns:IBasic_enableAndDisableItemCategoryByItemCategoryID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableMaterialByMaterialID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/enableAndDisableMaterialByMaterialID" message="tns:IBasic_enableAndDisableMaterialByMaterialID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/enableAndDisableMaterialByMaterialIDResponse" message="tns:IBasic_enableAndDisableMaterialByMaterialID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocationByWarehouseID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getLocationByWarehouseID" message="tns:IBasic_getLocationByWarehouseID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getLocationByWarehouseIDResponse" message="tns:IBasic_getLocationByWarehouseID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialByCategoryID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getMaterialByCategoryID" message="tns:IBasic_getMaterialByCategoryID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getMaterialByCategoryIDResponse" message="tns:IBasic_getMaterialByCategoryID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSerialNumberList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getSerialNumberList" message="tns:IBasic_getSerialNumberList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getSerialNumberListResponse" message="tns:IBasic_getSerialNumberList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="saveSerialNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/saveSerialNumber" message="tns:IBasic_saveSerialNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/saveSerialNumberResponse" message="tns:IBasic_saveSerialNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableSerialNumberBySerialID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/enableAndDisableSerialNumberBySerialID" message="tns:IBasic_enableAndDisableSerialNumberBySerialID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/enableAndDisableSerialNumberBySerialIDResponse" message="tns:IBasic_enableAndDisableSerialNumberBySerialID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBasic/getSN" message="tns:IBasic_getSN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBasic/getSNResponse" message="tns:IBasic_getSN_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBasic" type="tns:IBasic">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getWarehouseList">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getWarehouseList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocationList">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getLocationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerList">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getCustomerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSupplierList">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getSupplierList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemCategoryList">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getItemCategoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialList">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getMaterialList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveWarehouse">
+      <soap:operation soapAction="http://tempuri.org/IBasic/saveWarehouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveLocation">
+      <soap:operation soapAction="http://tempuri.org/IBasic/saveLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveCustomer">
+      <soap:operation soapAction="http://tempuri.org/IBasic/saveCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveSupplier">
+      <soap:operation soapAction="http://tempuri.org/IBasic/saveSupplier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveItemCategory">
+      <soap:operation soapAction="http://tempuri.org/IBasic/saveItemCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveMaterial">
+      <soap:operation soapAction="http://tempuri.org/IBasic/saveMaterial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableWarehouseByWareID">
+      <soap:operation soapAction="http://tempuri.org/IBasic/enableAndDisableWarehouseByWareID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableLocationByLocationID">
+      <soap:operation soapAction="http://tempuri.org/IBasic/enableAndDisableLocationByLocationID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableCustomerByCustomerID">
+      <soap:operation soapAction="http://tempuri.org/IBasic/enableAndDisableCustomerByCustomerID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableSupplierBySupplierID">
+      <soap:operation soapAction="http://tempuri.org/IBasic/enableAndDisableSupplierBySupplierID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableItemCategoryByItemCategoryID">
+      <soap:operation soapAction="http://tempuri.org/IBasic/enableAndDisableItemCategoryByItemCategoryID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableMaterialByMaterialID">
+      <soap:operation soapAction="http://tempuri.org/IBasic/enableAndDisableMaterialByMaterialID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocationByWarehouseID">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getLocationByWarehouseID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialByCategoryID">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getMaterialByCategoryID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSerialNumberList">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getSerialNumberList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveSerialNumber">
+      <soap:operation soapAction="http://tempuri.org/IBasic/saveSerialNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enableAndDisableSerialNumberBySerialID">
+      <soap:operation soapAction="http://tempuri.org/IBasic/enableAndDisableSerialNumberBySerialID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSN">
+      <soap:operation soapAction="http://tempuri.org/IBasic/getSN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BasicImpl">
+    <wsdl:port name="BasicHttpBinding_IBasic" binding="tns:BasicHttpBinding_IBasic">
+      <soap:address location="http://xiong-zhang-it.moderndentallab.net:9999/Basic.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://xiong-zhang-it.moderndentallab.net:9999/SysInfo.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" />
+  <xs:element name="getCompanyEasyList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCompanyEasyListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getCompanyEasyListResult" nillable="true" type="q1:ArrayOfSysCompanyEasyVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkLogin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pPwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="checkLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="checkLoginResult" nillable="true" type="q2:SysAccountEasyVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleByAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleByAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getRoleByAccountResult" nillable="true" type="q3:ArrayOfSysRoleEasyVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMenuByRoleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pRoleId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMenuByRoleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getMenuByRoleIdResult" nillable="true" type="q4:ArrayOfSysMenuVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMenuList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMenuListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getMenuListResult" nillable="true" type="q5:ArrayOfSysMenuVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getRoleListResult" nillable="true" type="q6:ArrayOfSysRoleVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCompanyList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCompanyListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getCompanyListResult" nillable="true" type="q7:ArrayOfSysCompanyVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getStructureList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getStructureListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getStructureListResult" nillable="true" type="q8:ArrayOfSysStructureVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAccountList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAccountListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getAccountListResult" nillable="true" type="q9:ArrayOfSysAccountVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUserDeinedList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUserDeinedListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getUserDeinedListResult" nillable="true" type="q10:ArrayOfSysUserDefinedVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveMenu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="pMenuVO" nillable="true" type="q11:SysMenuVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveMenuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveMenuResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="pRoleVO" nillable="true" type="q12:SysRoleVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveRoleResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveCompany">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="pCompanyVO" nillable="true" type="q13:SysCompanyVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveCompanyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveCompanyResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveStructure">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="pStructureVO" nillable="true" type="q14:SysStructureVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveStructureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveStructureResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="pAccountVO" nillable="true" type="q15:SysAccountVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveAccountResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveUserDefined">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="pUserDefinedVO" nillable="true" type="q16:SysUserDefinedVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveUserDefinedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="saveUserDefinedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="changePassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pOldPwd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pNewPwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="changePasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="changePasswordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resetPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pPwd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resetPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="resetPasswordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByMenuId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pMenuId" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByMenuIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableByMenuIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByCompanyId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pCompanyId" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByCompanyIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableByCompanyIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByStructureId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pStructureId" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByStructureIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableByStructureIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByAccountId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pAccountId" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByAccountIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableByAccountIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByRoleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pRoleId" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByRoleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableByRoleIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByUdcId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pUdcId" type="xs:int" />
+        <xs:element minOccurs="0" name="pStatus" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccount" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="enableAndDisableByUdcIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="enableAndDisableByUdcIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleAccountByAccountId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pAccountId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleAccountByAccountIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getRoleAccountByAccountIdResult" nillable="true" type="q17:ArrayOfSysRoleAccountVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeAccountId2Role">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pRoleId" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccountId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeAccountId2RoleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAccountId2Role">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pRoleId" type="xs:int" />
+        <xs:element minOccurs="0" name="pAccountId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveAccountId2RoleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleStructureByStructureId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pStructureId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleStructureByStructureIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getRoleStructureByStructureIdResult" nillable="true" type="q18:ArrayOfSysRoleStructureVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeStructureId2Role">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pRoleId" type="xs:int" />
+        <xs:element minOccurs="0" name="pStructureId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeStructureId2RoleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveStructureId2Role">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pRoleId" type="xs:int" />
+        <xs:element minOccurs="0" name="pStructureId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveStructureId2RoleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleMenuByRoleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pRoleId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRoleMenuByRoleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/WMS.Lib.vo.sys" minOccurs="0" name="getRoleMenuByRoleIdResult" nillable="true" type="q19:ArrayOfSysRoleMenuVO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeMenuId2Role">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pRoleId" type="xs:int" />
+        <xs:element minOccurs="0" name="pMenuId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeMenuId2RoleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveMenuId2Role">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pRoleId" type="xs:int" />
+        <xs:element minOccurs="0" name="pMenuId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="saveMenuId2RoleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

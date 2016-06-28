@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+<title>到货待检通知</title>
+<style type="text/css">
+    body{ font-family:Arial,"宋体"; font-size: 12px; font-weight: normal; color: #666666; }
+</style>
+</head>
+<body bgcolor="#F6FAFB">
+    <p> 您好，</p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+		仓库到货接收，编号[$no]，请尽快验收
+        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+        内容摘要：
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		---------------
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		运单号：[$trackingnumber]
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		品名：[$names]
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		发站：[$shipaddress]
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		发货人：[$shipper]
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		暂存放位置：[$location]
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		---------------
+		<br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+		详细内容，请登录WMS系统，进入【验收管理】模块
+    </p>
+    <br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;系统邮件，请勿回复！</p>
+</body>
+</html>
