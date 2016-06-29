@@ -52,11 +52,13 @@ namespace WMS.Client.util
                 loadSubMenuInfo(ref subMenu, item.ID, pLst);
 
                 subMenu.Tag = item.CmdForm;
-                subMenu.Click += (s1, e1) =>
+                if (!subMenu.HasDropDownItems)
                 {
-                    createFormInstance(item.CmdForm);
-                };
-
+                    subMenu.Click += (s1, e1) =>
+                    {
+                        createFormInstance(item.CmdForm);
+                    };
+                }
                 pTopMenu.DropDownItems.Add(subMenu);
             }
         }

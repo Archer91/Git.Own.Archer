@@ -110,5 +110,17 @@
         <elementListCompartment Id="22139f39-8a1a-4229-8b68-4655c8f6d6b8" absoluteBounds="2.64, 4.46, 1.9700000000000002, 4.067860921223958" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="01a940e2-1835-45e3-aa6a-76d2fa3e2bdb" isExpanded="false" absoluteBounds="4.75, 1.5, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Accept_CheckSplit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9dcb3bcf-788e-4d40-90f4-7dbfe017bb2d" absoluteBounds="4.765, 1.96, 1.9700000000000002, 3.112762451171875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="071a291f-b347-4a29-a8fa-8eeb0abcc7ce" isExpanded="false" absoluteBounds="4.75, 1, 2, 0.45">
+      <DataClassMoniker Name="/DataWMSDataContext/T_Accept_Check" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b499ad25-4d2a-45ca-bb18-bf78dec6d7e9" absoluteBounds="4.765, 1.46, 1.9700000000000002, 5.0229593912760411" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

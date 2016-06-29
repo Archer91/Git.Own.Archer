@@ -107,6 +107,8 @@
     </Compile>
     <Compile Include="util\SerialTypeEnum.cs" />
     <Compile Include="util\WMSException.cs" />
+    <Compile Include="vo\accept\AcceptCheckSplitVO.cs" />
+    <Compile Include="vo\accept\AcceptCheckVO.cs" />
     <Compile Include="vo\accept\AcceptReceivingVO.cs" />
     <Compile Include="vo\basic\CustomerVO.cs" />
     <Compile Include="vo\basic\ItemCategoryVO.cs" />

@@ -195,5 +195,102 @@ namespace WMS.Lib.impl
             MailUtil.SendNetMail(mailFrom, mailTo, mailSubject, mailBody, mailAttch, mailPriority, mailCC, out resultMessage);
         }
 
+        public bool saveAcceptCheck(AcceptCheckVO pCheckVO)
+        {
+            if(null == pCheckVO)
+            {
+                throw new WMSException("ER001");
+            }
+            if(string.IsNullOrEmpty(pCheckVO.ReceiveNo) ||
+                string.IsNullOrEmpty(pCheckVO.ItemCode))
+            {
+                throw new WMSException("ER001");
+            }
+
+            T_Accept_Check tac = new T_Accept_Check();
+            tac.ReceiveNo = pCheckVO.ReceiveNo;
+            tac.ItemCode = pCheckVO.ItemCode;
+            tac.ItemName = pCheckVO.ItemName;
+            tac.CustomerPartNo = pCheckVO.CustomerPartNo;
+            tac.Qty = pCheckVO.Qty;
+            tac.DateCode = pCheckVO.DataCode;
+            tac.LotNo = pCheckVO.LotNo;
+            tac.SupplierName = pCheckVO.SupplierName;
+            tac.Description = pCheckVO.Description;
+            tac.PurchaseOrder = pCheckVO.PurchaseOrder;
+            tac.ConfirmQty = pCheckVO.ConfirmQty;
+            tac.Remark = pCheckVO.Remark;
+            tac.Operator = pCheckVO.Operator;
+            tac.OperationTime = DateTime.Now;
+            tac.Status = 1;
+            tac.CreatedBy = pCheckVO.CreatedBy;
+            tac.CreateTime = DateTime.Now;
+
+            wmsContext.T_Accept_Check.InsertOnSubmit(tac);
+            wmsContext.SubmitChanges();
+
+            return true;
+        }
+
+        public bool saveAcceptCheckSplit(List<AcceptCheckSplitVO> pListSplitVO)
+        {
+            if(null == pListSplitVO || pListSplitVO.Count <= 0)
+            {
+                throw new WMSException("ER001");
+            }
+            List<T_Accept_CheckSplit> lst = new List<T_Accept_CheckSplit>();
+            foreach (var item in pListSplitVO)
+            {
+                T_Accept_CheckSplit tacs = new T_Accept_CheckSplit();
+                tacs.CheckID = item.CheckID;
+                tacs.ReelID = item.ReelID;
+                tacs.Qty = item.Qty;
+                tacs.Description = item.Description;
+                tacs.Status = 1;
+                tacs.CreatedBy = item.CreatedBy;
+                tacs.CreateTime = DateTime.Now;
+
+                lst.Add(tacs);
+            }
+
+            wmsContext.T_Accept_CheckSplit.InsertAllOnSubmit(lst);
+            wmsContext.SubmitChanges();
+            return true;
+        }
+
+        public List<AcceptCheckVO> getAcceptCheckByReceiveNo(string pReceiveNo)
+        {
+            if(string.IsNullOrEmpty(pReceiveNo))
+            {
+                throw new WMSException("ER001");
+            }
+
+            var result = from m in wmsContext.T_Accept_Check
+                         where m.ReceiveNo.ToUpper().Equals(pReceiveNo.Trim().ToUpper())
+                         select m;
+            List<AcceptCheckVO> lst = new List<AcceptCheckVO>();
+            foreach (var item in result)
+            {
+                AcceptCheckVO acv = new AcceptCheckVO();
+                //TODO
+
+                var details = from n in wmsContext.T_Accept_CheckSplit
+                              where n.CheckID == item.ID
+                              select n;
+                List<AcceptCheckSplitVO> lst2 = new List<AcceptCheckSplitVO>();
+                foreach (var item2 in details)
+                {
+                    AcceptCheckSplitVO acsv = new AcceptCheckSplitVO();
+                    //TODO
+
+                    lst2.Add(acsv);
+                }
+                acv.SplitDetails = lst2;
+
+                lst.Add(acv);
+            }
+
+            return lst;
+        }
     }
 }
